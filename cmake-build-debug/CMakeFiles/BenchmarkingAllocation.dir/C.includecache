@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/main.c
+stdio.h
+-
+time.h
+-
+pilha/contigua/pilhaContigua.h
+C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.h
+pilha/contigua/pilhaContigua.c
+C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.c
+
+C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.c
+pilhaContigua.h
+C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.h
+
+C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+
