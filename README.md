@@ -25,8 +25,8 @@ https://www.codeblocks.org/
 Netbeans
 <br>
 https://netbeans.apache.org/download/index.html
-<br>
-Versões dos Compiladores
+<br><br>
+<STRONG> Versões dos Compiladores</STRONG> 
 <br>
 Visual C++ 2019
 <br>
