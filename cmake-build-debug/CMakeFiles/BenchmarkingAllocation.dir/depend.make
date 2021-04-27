@@ -4,4 +4,6 @@
 CMakeFiles\BenchmarkingAllocation.dir\main.c.obj: ..\main.c
 CMakeFiles\BenchmarkingAllocation.dir\main.c.obj: ..\pilha\contigua\pilhaContigua.c
 CMakeFiles\BenchmarkingAllocation.dir\main.c.obj: ..\pilha\contigua\pilhaContigua.h
+CMakeFiles\BenchmarkingAllocation.dir\main.c.obj: ..\pilha\encadeada\pilhaEncadeada.c
+CMakeFiles\BenchmarkingAllocation.dir\main.c.obj: ..\pilha\encadeada\pilhaEncadeada.h
 

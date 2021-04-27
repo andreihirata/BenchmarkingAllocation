@@ -10,7 +10,7 @@ typedef struct no{
     struct no    *prox;
 }No;
 
-struct _pilha{
+struct _pilhaEncadeada{
     No *topo;
     int qtdeElementos;
 };
@@ -18,7 +18,7 @@ struct _pilha{
 /**************************************
  * FUNÇÕES AUXILIARES
  **************************************/
-bool pilha_ehValida(Pilha* p){
+bool pilha_encadeada_ehValida(PilhaEncadeada* p){
     return (p != NULL? true: false);
 }
 
@@ -32,15 +32,15 @@ No* criar_no(TipoElemento elemento, No* proximoNo){
 /**************************************
  * IMPLEMENTAÇÃO
  **************************************/
-Pilha* pilha_criar(){
-    Pilha* p = (Pilha*) malloc(sizeof(Pilha));
+PilhaEncadeada* pilha_encadeada_criar(){
+    PilhaEncadeada* p = (PilhaEncadeada*) malloc(sizeof(PilhaEncadeada));
     p->topo = NULL;
     p->qtdeElementos = 0;
     return p;
 }
 
-void pilha_destruir(Pilha* p){
-    if(!pilha_ehValida(p)) return;
+void pilha_encadeada_destruir(PilhaEncadeada* p){
+    if(!pilha_encadeada_ehValida(p)) return;
 
     No* aux;
     while(p->topo != NULL){
@@ -52,8 +52,8 @@ void pilha_destruir(Pilha* p){
     free(p);
 }
 
-bool pilha_empilhar(Pilha* p, TipoElemento elemento){
-    if(!pilha_ehValida(p)) return false;
+bool pilha_encadeada_empilhar(PilhaEncadeada* p, TipoElemento elemento){
+    if(!pilha_encadeada_ehValida(p)) return false;
 
     No* novo = criar_no(elemento, NULL);
     novo->prox = p->topo;
@@ -62,9 +62,9 @@ bool pilha_empilhar(Pilha* p, TipoElemento elemento){
     return true;
 }
 
-bool pilha_desempilhar(Pilha* p, TipoElemento* saida){ // estratégia do scanf
-    if(!pilha_ehValida(p)) return false;
-    if(pilha_vazia(p)) return false;
+bool pilha_encadeada_desempilhar(PilhaEncadeada* p, TipoElemento* saida){ // estratégia do scanf
+    if(!pilha_encadeada_ehValida(p)) return false;
+    if(pilha_encadeada_vazia(p)) return false;
 
     No* noRemovido = p->topo;
     p->topo = p->topo->prox;
@@ -76,20 +76,20 @@ bool pilha_desempilhar(Pilha* p, TipoElemento* saida){ // estratégia do scanf
     return true;
 }
 
-bool pilha_topo(Pilha* p, TipoElemento* saida){ // estratégia do scanf
-    if(!pilha_ehValida(p)) return false;
-    if(pilha_vazia(p)) return false;
+bool pilha_encadeada_topo(PilhaEncadeada* p, TipoElemento* saida){ // estratégia do scanf
+    if(!pilha_encadeada_ehValida(p)) return false;
+    if(pilha_encadeada_vazia(p)) return false;
 
     *saida = p->topo->dado;
     return true;
 }
 
-bool pilha_vazia(Pilha* p){
+bool pilha_encadeada_vazia(PilhaEncadeada* p){
     return (p->qtdeElementos == 0? true: false);
 }
 
-void pilha_imprimir(Pilha* p){
-    if(!pilha_ehValida(p)) return;
+void pilha_encadeada_imprimir(PilhaEncadeada* p){
+    if(!pilha_encadeada_ehValida(p)) return;
 
     printf("Encadeada");
     printf("[");
@@ -102,37 +102,37 @@ void pilha_imprimir(Pilha* p){
     printf("]");
 }
 
-int pilha_tamanho(Pilha* p){
+int pilha_encadeada_tamanho(PilhaEncadeada* p){
     return p->qtdeElementos;
 }
 
-Pilha* pilha_clone(Pilha* p) {
-    Pilha *c;
+PilhaEncadeada* pilha_encadeada_clone(PilhaEncadeada* p) {
+    PilhaEncadeada *c;
 
     int size;
     TipoElemento value;
     TipoElemento *buffer;
 
-    c = pilha_criar();
+    c = pilha_encadeada_criar();
     buffer = NULL;
     size = 0;
 
-    while ( pilha_desempilhar(p, &value) != false ) {
+    while ( pilha_encadeada_desempilhar(p, &value) != false ) {
         buffer = (TipoElemento *) realloc(buffer, ++size * sizeof(TipoElemento));
         buffer[size-1] = value;
     }
 
     while ( size > 0 ) {
         size--;
-        pilha_empilhar(p, buffer[size]);
-        pilha_empilhar(c, buffer[size]);
+        pilha_encadeada_empilhar(p, buffer[size]);
+        pilha_encadeada_empilhar(c, buffer[size]);
     }
 
     free(buffer);
     return c;
 }
 ;
-void pilha_inverter(Pilha* p) {
+void pilha_encadeada_inverter(PilhaEncadeada* p) {
     int i;
     int size;
     TipoElemento value;
@@ -141,30 +141,30 @@ void pilha_inverter(Pilha* p) {
     buffer = NULL;
     size = 0;
 
-    while ( pilha_desempilhar(p, &value) != false ) {
+    while ( pilha_encadeada_desempilhar(p, &value) != false ) {
         buffer = (TipoElemento *) realloc(buffer, ++size * sizeof(TipoElemento));
         buffer[size-1] = value;
     }
 
     i = 0;
     while ( i < size ) {
-        pilha_empilhar(p, buffer[i]);
+        pilha_encadeada_empilhar(p, buffer[i]);
         i++;
     }
 
     free(buffer);
 }
 
-bool pilha_empilharTodos(Pilha* p, TipoElemento* vetor, int tamVetor) {
+bool pilha_encadeada_empilharTodos(PilhaEncadeada* p, TipoElemento* vetor, int tamVetor) {
     int i;
 
     for ( i = 0; i < tamVetor; i++ ) {
-        pilha_empilhar(p, vetor[i]);
+        pilha_encadeada_empilhar(p, vetor[i]);
     }
 
     return true;
 }
 
-void printQueue(Pilha *p, void *printElemento(void *)) {
+void pilha_encadeada_printQueue(PilhaEncadeada *p, void *printElemento(void *)) {
     printElemento(p);
 }

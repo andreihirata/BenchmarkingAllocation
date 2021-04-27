@@ -5,3 +5,5 @@ CMakeFiles/BenchmarkingAllocation.dir/main.c.obj
  C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/main.c
  C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.c
  C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/contigua/pilhaContigua.h
+ C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/encadeada/pilhaEncadeada.c
+ C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/pilha/encadeada/pilhaEncadeada.h
