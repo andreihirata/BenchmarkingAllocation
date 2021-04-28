@@ -18,10 +18,12 @@
 #define TOCK(X) printf("time %s: %g sec.\n", (#X), (double)(clock() - (X)) / CLOCKS_PER_SEC)
 
 //Constantes
-const int dado10 = 10000;
-const int dado50 = 50000;
-const int dado100 = 100000;
-const int dado500 = 500000;
+
+const int dado100mil = 100000;
+const int dado500mil = 500000;
+const int dado1Milhao = 1000000;
+const int dado5Milhao = 5000000;
+
 
 void printInteiro(void* n){
     int* p = n;
@@ -180,53 +182,50 @@ void combination_function_encadeada_empilhar_desempilhar_imprimir(int value){
 
 int main(){
 
-
     //-------------------------Teste Pilha de Alocação Contígua-------------------------------------//
-    //function_contigua_empilhar(dado10);
-    //function_contigua_empilhar(dado50);
-    //function_contigua_empilhar(dado100);
-    //function_contigua_empilhar(dado500);
+    //function_contigua_empilhar(dado100mil);
+    //function_contigua_empilhar(dado500mil);
+    //function_contigua_empilhar(dado1Milhao);
+    //function_contigua_empilhar(dado5Milhao);
+    //function_contigua_desempilhar(dado100mil);
+    //function_contigua_desempilhar(dado500mil);
+    //function_contigua_desempilhar(dado1Milhao);
+    //function_contigua_desempilhar(dado5Milhao);
 
-    //function_contigua_desempilhar(dado10);
-    //function_contigua_desempilhar(dado50);
-    //function_contigua_desempilhar(dado100);
-    //function_contigua_desempilhar(dado500);
 
+    //combination_function_contigua_empilhar_imprimir(dado100mil);
+    //combination_function_contigua_empilhar_imprimir(dado500mil);
+    //combination_function_contigua_empilhar_imprimir(dado1Milhao);
+    //combination_function_contigua_empilhar_imprimir(dado5Milhao);
 
-    //combination_function_contigua_empilhar_imprimir(dado10);
-    //combination_function_contigua_empilhar_imprimir(dado50);
-    //combination_function_contigua_empilhar_imprimir(dado100);
-    //combination_function_contigua_empilhar_imprimir(dado500);
-
-    //combination_function_contigua_empilhar_desempilhar_imprimir((dado10));
-    //combination_function_contigua_empilhar_desempilhar_imprimir((dado50));
-    //combination_function_contigua_empilhar_desempilhar_imprimir((dado100));
-    //combination_function_contigua_empilhar_desempilhar_imprimir((dado500));
+    //combination_function_contigua_empilhar_desempilhar_imprimir((dado100mil));
+    //combination_function_contigua_empilhar_desempilhar_imprimir((dado500mil));
+    //combination_function_contigua_empilhar_desempilhar_imprimir((dado1Milhao));
+    //combination_function_contigua_empilhar_desempilhar_imprimir((dado5Milhao));
 
 
     //-------------------------Teste Pilha de Alocação Encadeada------------------------------------//
-    //function_encadeada_empilhar(dado10);
-    //function_encadeada_empilhar(dado50);
-    //function_encadeada_empilhar(dado100);
-    //function_encadeada_empilhar(dado500);
+    //function_encadeada_empilhar(dado100mil);
+    //function_encadeada_empilhar(dado500mil);
+    //function_encadeada_empilhar(dado1Milhao);
+    //function_encadeada_empilhar(dado5Milhao);
+
+    //function_encadeada_desempilhar(dado100mil);
+    //function_encadeada_desempilhar(dado500mil);
+    //function_encadeada_desempilhar(dado1Milhao);
+    //function_encadeada_desempilhar(dado5Milhao);
+
+
+    //combination_function_encadeada_empilhar_imprimir(dado100mil);
+    //combination_function_encadeada_empilhar_imprimir(dado500mil);
+    //combination_function_encadeada_empilhar_imprimir(dado1Milhao);
+    //combination_function_encadeada_empilhar_imprimir(dado5Milhao);
 
     //Problema aqui
-    //function_encadeada_desempilhar(dado10);
-    //function_encadeada_desempilhar(dado50);
-    //function_encadeada_desempilhar(dado100);
-    //function_encadeada_desempilhar(dado500);
-
-
-    //combination_function_encadeada_empilhar_imprimir(dado10);
-    //combination_function_encadeada_empilhar_imprimir(dado50);
-    //combination_function_encadeada_empilhar_imprimir(dado100);
-    //combination_function_encadeada_empilhar_imprimir(dado500);
-
-    //Problema aqui
-    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado10));
-    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado50));
-    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado100));
-    combination_function_encadeada_empilhar_desempilhar_imprimir((dado500));
+    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado100mil));
+    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado500mil));
+    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado1Milhao));
+    //combination_function_encadeada_empilhar_desempilhar_imprimir((dado5Milhao));
 
 
     return 0;

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/main.c" "C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/cmake-build-debug/CMakeFiles/BenchmarkingAllocation.dir/main.c.obj"
+  "C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/memory.c" "C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/cmake-build-debug/CMakeFiles/BenchmarkingAllocation.dir/memory.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 

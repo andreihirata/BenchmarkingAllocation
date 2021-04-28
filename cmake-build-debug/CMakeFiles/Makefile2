@@ -78,12 +78,12 @@ clean: CMakeFiles\BenchmarkingAllocation.dir\clean
 CMakeFiles\BenchmarkingAllocation.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BenchmarkingAllocation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BenchmarkingAllocation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target BenchmarkingAllocation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target BenchmarkingAllocation"
 .PHONY : CMakeFiles\BenchmarkingAllocation.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\BenchmarkingAllocation.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\BenchmarkingAllocation.dir\rule

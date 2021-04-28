@@ -80,17 +80,38 @@ CMakeFiles\BenchmarkingAllocation.dir\main.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\BenchmarkingAllocation.dir\main.c.s /c C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\main.c
 <<
 
+CMakeFiles\BenchmarkingAllocation.dir\memory.c.obj: CMakeFiles\BenchmarkingAllocation.dir\flags.make
+CMakeFiles\BenchmarkingAllocation.dir\memory.c.obj: ..\memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BenchmarkingAllocation.dir/memory.c.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\BenchmarkingAllocation.dir\memory.c.obj /FdCMakeFiles\BenchmarkingAllocation.dir\ /FS -c C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\memory.c
+<<
+
+CMakeFiles\BenchmarkingAllocation.dir\memory.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BenchmarkingAllocation.dir/memory.c.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe > CMakeFiles\BenchmarkingAllocation.dir\memory.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\memory.c
+<<
+
+CMakeFiles\BenchmarkingAllocation.dir\memory.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BenchmarkingAllocation.dir/memory.c.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\BenchmarkingAllocation.dir\memory.c.s /c C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\memory.c
+<<
+
 # Object files for target BenchmarkingAllocation
 BenchmarkingAllocation_OBJECTS = \
-"CMakeFiles\BenchmarkingAllocation.dir\main.c.obj"
+"CMakeFiles\BenchmarkingAllocation.dir\main.c.obj" \
+"CMakeFiles\BenchmarkingAllocation.dir\memory.c.obj"
 
 # External object files for target BenchmarkingAllocation
 BenchmarkingAllocation_EXTERNAL_OBJECTS =
 
 BenchmarkingAllocation.exe: CMakeFiles\BenchmarkingAllocation.dir\main.c.obj
+BenchmarkingAllocation.exe: CMakeFiles\BenchmarkingAllocation.dir\memory.c.obj
 BenchmarkingAllocation.exe: CMakeFiles\BenchmarkingAllocation.dir\build.make
 BenchmarkingAllocation.exe: CMakeFiles\BenchmarkingAllocation.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable BenchmarkingAllocation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable BenchmarkingAllocation.exe"
 	"G:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\BenchmarkingAllocation.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\BenchmarkingAllocation.dir\objects1.rsp @<<
  /out:BenchmarkingAllocation.exe /implib:BenchmarkingAllocation.lib /pdb:C:\Users\Andrei\Documents\GitHub\BenchmarkingAllocation\cmake-build-debug\BenchmarkingAllocation.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

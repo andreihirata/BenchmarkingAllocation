@@ -3,4 +3,4 @@ project(BenchmarkingAllocation C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(BenchmarkingAllocation main.c)
+add_executable(BenchmarkingAllocation main.c memory.c)

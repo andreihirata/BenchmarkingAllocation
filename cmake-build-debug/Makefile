@@ -154,6 +154,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BenchmarkingAllocation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\main.c.s
 .PHONY : main.c.s
 
+memory.obj: memory.c.obj
+
+.PHONY : memory.obj
+
+# target to build an object file
+memory.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BenchmarkingAllocation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\memory.c.obj
+.PHONY : memory.c.obj
+
+memory.i: memory.c.i
+
+.PHONY : memory.i
+
+# target to preprocess a source file
+memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BenchmarkingAllocation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\memory.c.i
+.PHONY : memory.c.i
+
+memory.s: memory.c.s
+
+.PHONY : memory.s
+
+# target to generate assembly for a file
+memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BenchmarkingAllocation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BenchmarkingAllocation.dir\memory.c.s
+.PHONY : memory.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -166,6 +193,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... memory.obj
+	@echo ... memory.i
+	@echo ... memory.s
 .PHONY : help
 
 

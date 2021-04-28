@@ -85,6 +85,9 @@
 		<Unit filename="C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/main.c">
 			<Option target="BenchmarkingAllocation"/>
 		</Unit>
+		<Unit filename="C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/memory.c">
+			<Option target="BenchmarkingAllocation"/>
+		</Unit>
 		<Unit filename="C:/Users/Andrei/Documents/GitHub/BenchmarkingAllocation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

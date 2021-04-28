@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "BenchmarkingAllocation.lib"
   "BenchmarkingAllocation.pdb"
   "CMakeFiles/BenchmarkingAllocation.dir/main.c.obj"
+  "CMakeFiles/BenchmarkingAllocation.dir/memory.c.obj"
 )
 
 # Per-language clean rules from dependency scanning.
